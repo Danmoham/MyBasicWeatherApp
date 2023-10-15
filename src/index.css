@@ -5,7 +5,7 @@ html{
 }
 
 body{
-    background: radial-gradient(circle at 10% 20%, rgb(99, 55, 255) 0%, rgb(39, 170, 255) 90%);
+    background: radial-gradient(circle at 10% 20%, rgb(182, 4, 4) 0%, rgb(39, 170, 255) 90%);
     color: white;
     font-family: 'Poppins';
     font-size: x-large;
@@ -16,6 +16,7 @@ body{
     color: white;
     font-family: 'Poppins';
     font-size: 22px !important;
+    margin-top: 20px;
 
 }
 #mainDiv{
@@ -46,17 +47,17 @@ label{
     margin-top: 100px;
 }
 #styleDiv{
-    background-color: rgb(55, 55, 201);
+    background-color: rgba(237, 236, 247, 0.364);
     border-radius: 15px;
     font-weight: 800;
     ;
     margin-left: 100px;
     margin-right: 100px;
     margin-bottom: 25px;
-    margin-top: 60px;
+    margin-top: 160px;
 }
 #userInput{
-    border: #0a6bff;
+    border: rgb(125, 4, 103);
     border-radius: 3px;
     margin-right: 40px;
     
@@ -64,7 +65,7 @@ label{
 
 button{
 /* CSS */
-  background-color: #0a6bff;
+  background-color: rgb(182, 9, 9);
   border: 0;
   box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
   box-sizing: border-box;
@@ -88,7 +89,7 @@ button{
 }
 
 button {
-  background-color: #065dd8;
+  background-color: (125, 4, 103);
   transform: translateY(-2px);
 }
 
@@ -111,7 +112,7 @@ button {
 input, select, textarea{
     color: white;
     font-weight: 700;
-    background-color: #0a6bff;
+    background-color:rgb(182, 9, 9);
     font-size: large;
     text-align: center;
     margin-left: 2vh;
@@ -123,4 +124,8 @@ input, select, textarea{
     font-size: large;
     text-align: center;
     opacity: 1; /* Firefox */
+  }
+
+  #openingLineDiv{
+    margin-top: 50px;
   }
