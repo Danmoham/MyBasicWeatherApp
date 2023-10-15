@@ -9,7 +9,7 @@ export const ShowChanges = ({myStats, switchThePage}) =>{
     let newTime = ``
     let timeInHours= (myStats.myTime.slice(10,13))
     if (timeInHours > 11){
-        newTime = `${timeInHours-12}:${myStats.myTime.slice(14)}pm`
+        newTime = `${myStats.myTime.slice(10)}pm`
     }else if (timeInHours > 9){
         newTime = `${timeInHours}:${myStats.myTime.slice(14)}am`
     }else{
@@ -21,8 +21,10 @@ export const ShowChanges = ({myStats, switchThePage}) =>{
         <p className= "finalStats"id="country">The Country this is in is {myStats.myCountry}.</p>
         <p className= "finalStats" id="temp">This Cities temperature is currently at {myStats.myTemp}°C and is {myTempDescription}</p>
         <p className= "finalStats" id="time">The time in this City is {newTime}.</p>
+        <div id="buttonDiv">
         <button onClick={() =>{
             switchThePage("insert")
         }} >Go back!</button>
+        </div>
     </div>)
     }

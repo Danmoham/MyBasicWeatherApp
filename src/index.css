@@ -1,1 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    font-family: 'Poppins';
+    font-size: x-large;
 
+}
+html{
+    min-height: 100%;
+}
+
+body{
+    background: radial-gradient(circle at 10% 20%, rgb(99, 55, 255) 0%, rgb(39, 170, 255) 90%);
+    color: white;
+}
+#headDiv{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 22px !important;
+
+}
+#mainDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#openingLineDiv{
+    display: flex;
+    justify-content: center;
+}
+p{
+   
+    text-align: center;
+}
+#formDiv{
+    display: flex;
+    justify-content: center;
+margin: 50px
+
+}
+
+form{
+    align-content: center;
+}
+label{
+    margin: 40px;
+    margin-top: 100px;
+}
+#styleDiv{
+    background-color: rgb(55, 55, 201);
+    border-radius: 15px;
+    font-weight: 800;
+    ;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 25px;
+    margin-top: 60px;
+}
+#userInput{
+    border: #0a6bff;
+    border-radius: 3px;
+    margin-right: 40px;
+    
+}
+
+button{
+/* CSS */
+  background-color: #0a6bff;
+  border: 0;
+  box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inherit;
+  font-family: "Space Grotesk",-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  min-height: 56px;
+  min-width: 120px;
+  padding: 16px 20px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  transition: all .2s cubic-bezier(.22, .61, .36, 1);
+}
+
+button {
+  background-color: #065dd8;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  button{
+    padding: 16px 44px;
+    min-width: 150px;
+  }
+}
+
+#myError{
+    color: white(160, 20, 20);
+    font-weight: 800;
+}
+#buttonDiv{
+    display: flex;
+    margin-top: 5vh;
+    margin-left: 100px;
+}
+input, select, textarea{
+    color: white;
+    font-weight: 700;
+    background-color: #0a6bff;
+    font-size: large;
+    text-align: center;
+    margin-left: 2vh;
+    
+}
+ 
+::placeholder {
+    color: white;
+    font-size: large;
+    text-align: center;
+    opacity: 1; /* Firefox */
+  }

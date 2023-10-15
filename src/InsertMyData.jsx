@@ -21,18 +21,27 @@ export const InsertMyData = ({ChangeStats,myStats,switchThePage}) =>{
         
     }
     return (
-        <div>
-            <p>Just type in the City you want the Temperature from and watch the magic unfold</p>
+        <div id= "mainDiv">
+            <div id="openingLineDiv">
+            <p>Please either enter the post code, the IP address or the name of the city you are looking to check. If there are multiple of cities across the world with this name, please type the country afterwards. E.G Skipton UK.</p>
+            </div>
+            <div id="styleDiv">
+    <div id="formDiv">
     <form onSubmit={changingCityPermanant}>
         <label htmlFor="userInput">Please Enter your City/Town here</label>
         <input onChange={(event) =>{
             setCurrentCity(() =>{
                 return event.target.value
             })
-        } } id="userInput"placeholder="Type your text here"></input>
-        <button>Please submit here</button>
+            checkIfCorrect("")
+        }} type="text" value={currentCity} id="userInput"placeholder="Type your text here"></input>
+        <div id="buttonDiv">
+        <button id="submitButton">Please submit here</button>
+        </div>
 
     </form>
+    </div>
+    </div>
     <p id="myError">{isCorrect}</p>
     </div>)
     }
