@@ -114,6 +114,7 @@ button {
 #buttonDiv{
    
     margin-top: 5vh;
+    margin-left: 12%;
     align-content: center;
 }
 input, select, textarea{
