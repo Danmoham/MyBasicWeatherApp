@@ -28,6 +28,7 @@ export const InsertMyData = ({ChangeStats,myStats,switchThePage}) =>{
             <div id="styleDiv">
     <div id="formDiv">
     <form onSubmit={changingCityPermanant}>
+        <div id="textInput">
         <label htmlFor="userInput">Please Enter your City/Town here</label>
         <input onChange={(event) =>{
             setCurrentCity(() =>{
@@ -35,6 +36,7 @@ export const InsertMyData = ({ChangeStats,myStats,switchThePage}) =>{
             })
             checkIfCorrect("")
         }} type="text" value={currentCity} id="userInput"placeholder="Type your text here"></input>
+        </div>
         <div id="buttonDiv">
         <button id="submitButton">Please submit here</button>
         </div>
